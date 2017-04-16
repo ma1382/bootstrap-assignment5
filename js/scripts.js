@@ -158,12 +158,12 @@ L.control.layers(null, types, {
 
 $('.Burnside').on('click', function() {
   // alert('You clicked Al!')
-  map.flyTo(transit4[1].coord, 18)
+  map.flyTo(transit4[1].coord, 16)
 });
 
 $('.Tremont').on('click', function() {
   // alert('You clicked Al!')
-  map.flyTo(transitD[2].coord, 18)
+  map.flyTo(transitD[2].coord, 16)
 });
 
 //end
