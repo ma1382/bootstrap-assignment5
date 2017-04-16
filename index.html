@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>District 14 Leaflet Map</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- Begin Bootstrap Navbar -->
+<nav id="custom-bootstrap-menu" class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://council.nyc.gov/district-14/">District 14</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www1.nyc.gov/site/planning/plans/jerome-ave/jerome-ave.page">Jerome Avenue Neighborhood Planning Study</a></li>
+            <li><a href="https://www1.nyc.gov/assets/planning/download/pdf/plans-studies/jerome-ave/process-plan-update-0317.pdf">Process and Plan Update March 2017</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://data.cityofnewyork.us/City-Government/Census-Demographics-at-the-NYC-City-Council-distri/ye4r-qpmp/data">City Council District Census Demographic Data</a></li>
+            <li><a href="http://web.mta.info/maps/">MTA Maps</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- End Bootstrap Navbar -->
+
+
+<!-- Bootstrap JumboTron -->
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome to District 14!</h1>
+    <p>Find out more information about the Jerome Avenue Rezoning Study Area.</p>
+     <p><a class="btn btn-primary btn-info" href="#" role="button">Learn more! »</a></p>
+    </div>
+</div>
+
+<!-- End Bootstrap JumboTron -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="custom-h2">Explore the Study Area!</h2>
+      <p>Find transportation near the study area and the District Office. </p>
+      <button type="button" class="btn btn-danger reset">Reset Map</button>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary Burnside"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Burnside Av</button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary Tremont"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Tremont Station</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="mapContainer">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+<!-- Bootstrap Comment Form -->
+
+  <div class="container">
+  <h2>Community Input</h2>
+     <p>Are you interested in the rezoning proposal? Tell us what you want to see in your neighborhood.</p>
+    <form>
+    <div class="form-group">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+  </form>
+    <p><a class="btn btn-primary btn-success" href="#" role="button">Submit »</a></p>
+  </div>
+
+  <!-- End Bootstrap Comment Form -->
+
+</body>
+</html>
